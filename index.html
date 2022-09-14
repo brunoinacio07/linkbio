@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruno Inácio - Links</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        VANTA.NET({
+          el: '#vanta',
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.1,
+          color: 0x7272b9
+        })
+        setTimeout(() => {
+          const main = document.querySelector('main')
+          main.style.opacity = 1
+          main.style.filter = 'blur(0)'
+        }, 1000)
+      })
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main>
+      <header>
+        <img src="./images//me.jpg" alt="Bruno" />
+        <h1>@brunoinacio07</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://blitech.com.br">
+            <img src="./images/homepage.svg" alt="HomePage" width="20" />
+            Website
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/brunoinacio07">
+            <img src="./images/linkedin.svg" alt="LinkedIn" width="20" />
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/brunoinacio">
+            <img src="./images/github.svg" alt="GitHub" width="20" />
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.com/users/BrunoInacio07#6652">
+            <img src="./images/discord.svg" alt="Discord" width="20" />
+            Discord
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
